@@ -1,13 +1,19 @@
-# rust_documentation
+Regular **Markdown** here.
 
-<!--
-@startuml firstDiagram
+```
+@startuml mb_state_diagram
 
-Alice -> Bob: Hello
-Bob -> Alice: Hi!
-	
+[*] --> Idle
+
+Idle -> RdyForCmd : Ev_LockRd [unlocked] / lock 
+RdyForCmd --> RdyForDlen : Ev_DlenWr
+RdyForDlen --> RdyForData : Ev_DataInWr / enqueue
+RdyForData --> Exec : Ev_ExecWr
+Exec --> Exec : Ev_DataOutRd / dequeue
+Exec --> Idle : Ev_ExecWr
+
 @enduml
--->
+```
 
 ![](firstDiagram.svg)
 
