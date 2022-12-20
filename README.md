@@ -12,4 +12,3 @@ This repository contains code for creating an emulator for the Caliptra hardware
 The UML state diagram depicted below represents the behavior of the mailbox state machine. The notation follows the UML conventions:
 
 ![Alt text](./docs/mb_state_diagram.svg)
-<img src="./docs/mb_state_diagram.svg">
