@@ -6,6 +6,7 @@ This repository contains code for creating an emulator for the Caliptra hardware
 
 ### Mailbox 
 
+#### Class Diagram
 ```plantuml
 @startuml mb_class_diagram
 Bus <|-- MailboxIface
